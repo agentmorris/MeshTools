@@ -69,6 +69,6 @@ The code is a relatively standalone mesh class that plugs into the CHAI framewor
 In addition to CHAI 3D, this code base includes versions of:
 
 &nbsp;&nbsp;&nbsp;&nbsp;[ANN](http://www.cs.umd.edu/~mount/ANN/) : Approximate Nearest Neighbors  
-&nbsp;&nbsp;&nbsp;&nbsp;[RPly](https://github.com/lkiesow/librply) : PLY file I/O
-&nbsp;&nbsp;&nbsp;&nbsp;[Wild Magi](https://www.geometrictools.com/) : 3d shape/point manipulation
+&nbsp;&nbsp;&nbsp;&nbsp;[RPly](https://github.com/lkiesow/librply) : PLY file I/O  
+&nbsp;&nbsp;&nbsp;&nbsp;[Wild Magic](https://www.geometrictools.com/) : 3d shape/point manipulation
 
