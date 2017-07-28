@@ -2,10 +2,10 @@
 
 This repository contains two tools (WinMeshView and Voxelizer) for mesh manipulation that I developed in the course of my thesis work:
 
-Haptics and Physical Simulation for Virtual Bone Surgery  
-[http://dmorris.net/publications/dmorris_thesis.pdf](http://dmorris.net/publications/dmorris_thesis.pdf)  
-Morris D  
-PhD thesis, Stanford University, August 2006
+&nbsp;&nbsp;&nbsp;&nbsp;Haptics and Physical Simulation for Virtual Bone Surgery  
+&nbsp;&nbsp;&nbsp;&nbsp;[http://dmorris.net/publications/dmorris_thesis.pdf](http://dmorris.net/publications/dmorris_thesis.pdf)  
+&nbsp;&nbsp;&nbsp;&nbsp;Morris D  
+&nbsp;&nbsp;&nbsp;&nbsp;PhD thesis, Stanford University, August 2006</div>
 
 Though I don't have time to maintain these tools, folks have found WinMeshView and Voxelizer useful over the years, so I try to at least make sure they avoid "code rot" and compile in modern versions of Visual Studio.
 
