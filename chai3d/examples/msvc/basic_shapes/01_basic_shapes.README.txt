@@ -1,0 +1,38 @@
+/****
+
+ CHAI Example: 01_basic_shapes
+ 
+ Author: Dan Morris
+
+****/
+
+This example demonstrates the use of the core CHAI components by 
+creating an OpenGL environment and allowing the user to render
+a simple object graphically and haptically.
+
+Relevant items to look at in the code are :
+
+* basic_shapes.cpp is the main application file, which includes
+  initialization and the haptic and graphic rendering loops.
+
+  There are two constants that you might want to play with to get this
+  example running smoothly in your environment.  One controls whether
+  the haptics are generated on a second thread or via multimedia callbacks,
+  and the applies only to Phantom users: it controls whether CHAI talks to
+  the Phantom via the gstEffect interface or the "force i/o" interface.
+  Both are documented in the cpp file in more detail.
+
+  Useful functions to look at are :
+
+  * InitInstance(): Here we create a CHAI world, a viewport on that world,
+    a camera, and a simple shape (a cube).
+
+  * render_loop(): This is called by the main message-processing loop,
+    and it just tells the viewport to render itself.
+
+  * basic_shapes_haptic_iteration: This is called by the haptics thread or
+    the multimedia timer callback at each haptic iteration, and it tells
+    the haptic device to render forces.
+
+  * toggle_haptics: This is called when the user clicks the 'toggle haptics'
+    button, and it enables or disables haptic rendering.

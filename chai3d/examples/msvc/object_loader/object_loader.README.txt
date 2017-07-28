@@ -1,0 +1,36 @@
+/****
+
+ CHAI Example: 02_object_loader
+ 
+ Author: Dan Morris
+
+****/
+
+This example builds on the first example (01_basic_shapes) and adds a more
+complex GUI that allows the user to control various rendering options, and
+the ability to load arbitrary shapes from mesh files (.obj and .3ds are the
+currently supported formats.) 
+
+Relevant items to look at in the code (besidres what was already discussed
+in the README.txt file for the 01_basic_shapes example) are :
+
+* object_loader.cpp is the main application file, which includes
+  initialization and the haptic and graphic rendering loops.
+
+  The important function that makes this example different than the
+  previous example is the LoadModel() function, which takes a filename
+  (.obj or .3ds), then opens that file up and displays the model (graphically
+  and haptically).
+
+  To demonstrate some extra mesh processing, this function also scales the
+  mesh's vertices to fit nicely in the display and centers the model in
+  the viewing area.  This is a good example of performing a per-vertex operation
+  on a model.
+
+  Also note the use of the new_object->createAABBCollisionDetector(...) function to
+  create a collision-detection tree for newly-loaded models.  The previous example
+  didn't demonstrate this, since the default brute-force collision detector
+  is fast enough for haptic interaction with a simple cube.
+
+
+

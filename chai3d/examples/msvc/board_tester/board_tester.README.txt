@@ -1,0 +1,31 @@
+/****
+
+ CHAI Example: 06_board_tester
+
+ Author: Federico Barbagli
+
+****/
+
+This example shows how to use the I/O boards that are supported in chai,
+the Sensoray626 and the Servotogo ISA board. The demo let's you read from
+encoders and or write values to DACs. In order to use this example, and
+either
+of the supported boards, you will need to have properly installed them.
+To install Sensoray 626 boards visit the Sensoray web site at
+http://www.sensoray.com/
+To install Servotogo boards visit the Servotogo web site at
+http://www.servotogo.com/
+Note: in order to use the Servotogo board from Windows XP we rely on a
+library called DLPortIO. You will need to install such library
+in order to be able to access the Servotogo card.
+
+Relevant items to look at in the code are :
+
+* 06_board_testerDlg.cpp is the main application file, which includes
+  initialization and main commands to the boards.
+
+  A cGenericDevice is created and then is used to point to a specific
+  board that you decide to pick from the GUI. Pressing on any of the encoder
+  buttons will poll from the relative encoder channel from the selected board.
+  The Slider Value to DACs will send the amount of volts selected through the
+  slider on the GUI to ALL the DACs. This is limited between -10 and 10 Volts.

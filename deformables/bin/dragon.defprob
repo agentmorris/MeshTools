@@ -1,0 +1,51 @@
+#####
+#
+# Constants that affect the loading of a model file; must appear
+# before the model specification...
+#
+# These don't work if the previously-loaded model was for some reason not 
+# a deformable model.
+#
+#####
+
+# How should mass be assigned to nodes?
+# FIXED_TET_DENSITY=0, FIXED_TOTAL_MASS, FIXED_VERTEX_MASS
+constant mass_assignment_strategy 2
+
+# This is either the density, the total mass (distributed according to tet volume)
+# or the per-vertex mass, depending on the mass_assignment_strategy constant
+constant mass_assignment_constant 0.1
+
+
+######
+# Model file:
+######
+model       voxelized\dragon_vrip_res2.ply.v15.ele
+rendermodel voxelized\dragon_vrip_res3.ply
+
+
+######
+# Constraints
+######
+constraint POSITION_CONSTANT (0,1,2,3,8,9,12,13,16,17,20,21,24,25,28,30,32,34,) 0 100000.0 lock
+
+
+######
+# Constants:
+#
+# constant [name] [value]
+#
+# constants are applied immediately to the model that was most recently loaded
+######
+
+constant   timestep         0.00005
+
+constant   floor_enabled             0
+constant   gravity_enabled           1
+constant   render_vertex_constraints 0
+
+constant   kd             5000000.0
+constant   ka             30000.0
+constant   kv             80000.0
+constant   kd_damp        15.0
+

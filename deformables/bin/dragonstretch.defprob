@@ -1,0 +1,107 @@
+#####
+#
+# Constants that affect the loading of a model file; must appear
+# before the model specification...
+#
+# These don't work if the previously-loaded model was for some reason not 
+# a deformable model.
+#
+#####
+
+# How should mass be assigned to nodes?
+# FIXED_TET_DENSITY=0, FIXED_TOTAL_MASS, FIXED_VERTEX_MASS
+constant mass_assignment_strategy 2
+
+# This is either the density, the total mass (distributed according to tet volume)
+# or the per-vertex mass, depending on the mass_assignment_strategy constant
+constant mass_assignment_constant 0.1
+
+# Handles the removal of tets that are too small for simulation
+constant remove_small_tets_at_import 1
+constant small_import_tet_volume 0.01
+
+######
+# Model file:
+######
+model       c:\users\dmorris\teschner_deformable\bin\voxelized\dragon_vrip_res2.ply.v15.ele
+rendermodel c:\users\dmorris\teschner_deformable\bin\voxelized\dragon_vrip_res3.ply
+
+
+######
+# Constraints
+######
+constraint POSITION_CONSTANT (0,1,2,3,4,5,6,7,8,9,10,11,16,17,20,21,26,28,32,34,35,38,40,42,43,46,57,58,73,83,91,98,) 0 100000.0 lock
+constraint FORCE_CONSTANT (640,641,642,643,644,645,646,647,648,649,650,651,652,653,654,655,656,657,658,660,661,662,663,664,665,667,668,669,670,671,672,673,674,675,676,677,678,679,680,681,682,683,684,685,686,687,688,689,690,691,692,693,694,695,696,697,698,699,700,) 0 100000.0 (0.000000,0.000000,-3000.000000)
+
+######
+# Constants:
+#
+# constant [name] [value]
+#
+# constants are applied immediately to the model that was most recently loaded
+######
+
+constant   timestep         0.00005
+
+constant   floor_enabled             0
+constant   gravity_enabled           0
+constant   render_vertex_constraints 1
+
+# a good kd range seems to be 20000 --> 5000000
+constant   kd             4000000.0
+
+# a good ka/kv range seems to be 0 --> 1000000
+# when kd is at 10000, the problem converges w/these params @ 10,000,000
+# when kd is at 30000, the problem converges w/these params @ 0.0
+constant   ka             100000.0
+constant   kv             100000.0
+constant   kd_damp        10.0
+
+
+######
+# Output specs:
+#
+# Output files will be datestamped with the real time at which the
+# simulation was started and the simulated time at which the output was
+# generated.
+######
+
+#
+# Enable steady state output
+#
+# steady_state_output [minimum_simtime] [maximum_simtime] [exit]
+#
+
+steady_state_output 0.0 1.5 0
+
+#
+# Set thresholds used to assess steady-state
+#
+# thresholds less than zero are ignored (always satisfied)
+#
+# steady_state_parameters [maxvel] [meanvel] [maxaccel] [meanaccel] [required_steady_time]
+#
+# steady_state_parameters 0.0005 0.0005 0.01 0.0005 0.1
+steady_state_parameters 0.001 0.0005 0.03 0.0005 0.1
+
+#
+# Used to assign time periods for Abaqus models; the first step implicitly starts at zero,
+# and the last step _ends_ at the last time specified here
+#
+# steps 0.3 0.6 1.0 1.5
+steps 1.5
+
+#
+# Used to assign material properties just for outputting to Abaqus
+#
+abaqus_material_prop youngs_modulus 2e7
+abaqus_material_prop poisson_coeff 0.499
+
+# To create multiple solid sections when exporting to Abaqus...
+#
+# solid_section 1e6 0.1 (33,55)
+# solid_section 3e6 0.15 (10-20)
+#
+# Delete the previous sections; this is just for demonstration...
+# solid_section clear
+#

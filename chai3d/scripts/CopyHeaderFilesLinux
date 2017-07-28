@@ -1,0 +1,11 @@
+cp ../src/graphics/*.h ../include
+cp ../src/widgets/*.h ../include
+cp ../src/scenegraph/*.h ../include
+cp ../src/files/*.h ../include
+cp ../src/devices/*.h ../include
+cp ../src/tools/*.h ../include
+cp ../src/forces/*.h ../include
+cp ../src/collisions/*.h ../include
+cp ../src/display/*.h ../include
+cp ../src/math/*.h ../include
+cp ../src/timers/*.h ../include

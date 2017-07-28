@@ -1,0 +1,706 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: active_x - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /nologo /D "NDEBUG" /tlb "Release/active_x.tlb" /mktyplib203 /win32 "C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\active_x\active_x.odl""
+Creating command line "rc.exe /l 0x409 /fo"Release/active_x.res" /i "Release" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\active_x\active_x.rc"" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP3F.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/active_x.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\active_x\active_x.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\active_x\Active_xCtl.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\active_x\Active_xPpg.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP3F.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP40.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/active_x.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\active_x\StdAfx.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP40.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP41.tmp" with contents
+[
+winmm.lib opengl32.lib chai3d_complete.lib glu32.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Release/active_x_msvc6.pdb" /machine:I386 /def:".\active_x.def" /out:"../../../bin/active_x_msvc6.ocx" /implib:"Release/active_x_msvc6.lib" /libpath:"..\..\..\lib\msvc6\\" 
+".\Release\active_x.obj"
+".\Release\Active_xCtl.obj"
+".\Release\Active_xPpg.obj"
+".\Release\StdAfx.obj"
+".\Release\active_x.res"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP41.tmp"
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP42.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\bin\active_x_msvc6.ocx"
+echo regsvr32 exec. time > ".\Release\regsvr32.trg"
+]
+Creating command line "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP42.bat"
+Creating Type Library...
+Processing C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\active_x\active_x.odl
+active_x.odl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+active_x.cpp
+Active_xCtl.cpp
+Active_xPpg.cpp
+Generating Code...
+Linking...
+xilink6: executing 'C:\PROGRA~1\MIAF9D~1\VC98\Bin\link.exe'
+   Creating library Release/active_x_msvc6.lib and object Release/active_x_msvc6.exp
+active_x_msvc6.exp : warning LNK4070: /OUT:ACTIVE_X.OCX directive in .EXP differs from output filename "../../../bin/active_x_msvc6.ocx"; ignoring directive
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+active_x_msvc6.ocx - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: basic_shapes - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/basic_shapes.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\basic_shapes\basic_shapes.rc"" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP4D.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/basic_shapes.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\basic_shapes\basic_shapes.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\basic_shapes\basic_shapesDlg.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP4D.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP4E.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/basic_shapes.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\basic_shapes\StdAfx.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP4E.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP4F.tmp" with contents
+[
+winmm.lib opengl32.lib chai3d_complete.lib glu32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/basic_shapes_msvc6.pdb" /machine:I386 /nodefaultlib:"msvcprt.lib libc.lib msvcp60.lib" /out:"../../../bin/basic_shapes_msvc6.exe" /libpath:"../../../lib/msvc6" 
+".\Release\basic_shapes.obj"
+".\Release\basic_shapesDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\basic_shapes.res"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP4F.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+basic_shapes.cpp
+basic_shapesDlg.cpp
+Generating Code...
+Linking...
+xilink6: executing 'C:\PROGRA~1\MIAF9D~1\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+basic_shapes_msvc6.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: board_tester - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/board_tester.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\board_tester\board_tester.rc"" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP51.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/board_tester.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\board_tester\board_tester.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\board_tester\board_testerDlg.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP51.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP52.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/board_tester.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\board_tester\StdAfx.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP52.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP53.tmp" with contents
+[
+chai3d_complete.lib DLPORTIO.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/board_tester_msvc6.pdb" /machine:I386 /out:"../../../bin/board_tester_msvc6.exe" /libpath:"../../../lib/msvc6/" 
+".\Release\board_tester.obj"
+".\Release\board_testerDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\board_tester.res"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP53.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+board_tester.cpp
+board_testerDlg.cpp
+Generating Code...
+Linking...
+xilink6: executing 'C:\PROGRA~1\MIAF9D~1\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+board_tester_msvc6.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: clock - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/clock.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\clock\clock.rc"" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP55.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/clock.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\clock\clock.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\clock\clockDlg.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP55.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP56.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/clock.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\clock\StdAfx.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP56.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP57.tmp" with contents
+[
+winmm.lib chai3d_complete.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/clock_msvc6.pdb" /machine:I386 /out:"../../../bin/clock_msvc6.exe" /libpath:"../../../lib/msvc6" 
+".\Release\clock.obj"
+".\Release\clockDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\clock.res"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP57.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+clock.cpp
+clockDlg.cpp
+Generating Code...
+Linking...
+xilink6: executing 'C:\PROGRA~1\MIAF9D~1\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+clock_msvc6.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: dynamic_meshes - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP59.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /I "../dynamic_ode/include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "_MSVC" /Fp"Release/dynamic_meshes.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\dynamic_meshes\main.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP59.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP5A.tmp" with contents
+[
+ode.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib opengl32.lib chai3d_complete.lib glu32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/dynamic_meshes_msvc6.pdb" /machine:I386 /out:"../../../bin/dynamic_meshes_msvc6.exe" /libpath:"../../../lib/msvc6" /libpath:"../../../external/OpenGL/msvc6" /libpath:"../dynamic_ode/lib/ode" 
+".\Release\main.obj"
+"..\..\..\lib\msvc6\DLPORTIO.lib"
+"..\..\..\lib\msvc6\chai3d_complete.lib"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP5A.tmp"
+<h3>Output Window</h3>
+Compiling...
+main.cpp
+Linking...
+xilink6: executing 'C:\PROGRA~1\MIAF9D~1\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+dynamic_meshes_msvc6.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: dynamic_ode - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/dynamic_ode.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\dynamic_ode\dynamic_ode.rc"" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP5C.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /I "include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/dynamic_ode.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\dynamic_ode\CODEMesh.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\dynamic_ode\dynamic_ode.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\dynamic_ode\dynamic_odeDlg.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP5C.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP5D.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /I "include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/dynamic_ode.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\dynamic_ode\StdAfx.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP5D.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP5E.tmp" with contents
+[
+winmm.lib opengl32.lib chai3d_complete.lib glu32.lib ode.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/dynamic_ode_msvc6.pdb" /machine:I386 /nodefaultlib:"msvcprt.lib libc.lib msvcp60.lib" /out:"../../../bin/dynamic_ode_msvc6.exe" /libpath:"../../../lib/msvc6" /libpath:"../../../external\PhantomDriver\lib\MSVC" /libpath:"lib/ode" 
+".\Release\CODEMesh.obj"
+".\Release\dynamic_ode.obj"
+".\Release\dynamic_odeDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\dynamic_ode.res"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP5E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CODEMesh.cpp
+dynamic_ode.cpp
+dynamic_odeDlg.cpp
+Generating Code...
+Linking...
+xilink6: executing 'C:\PROGRA~1\MIAF9D~1\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+dynamic_ode_msvc6.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: earth - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP60.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "_MSVC" /Fp"Release/earth.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\bcpp6\earth\main.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP60.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP61.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib opengl32.lib chai3d_complete.lib glu32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/earth_msvc6.pdb" /machine:I386 /out:"../../../bin/earth_msvc6.exe" /libpath:"../../../lib/msvc6" /libpath:"../../../external/OpenGL/msvc6" 
+".\Release\main.obj"
+"..\..\..\lib\msvc6\DLPORTIO.lib"
+"..\..\..\lib\msvc6\chai3d_complete.lib"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP61.tmp"
+<h3>Output Window</h3>
+Compiling...
+main.cpp
+Linking...
+xilink6: executing 'C:\PROGRA~1\MIAF9D~1\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+earth_msvc6.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: force_shading - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/force_shading.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\force_shading\force_shading.rc"" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP63.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/force_shading.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\force_shading\CForceShadingProxy.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\force_shading\force_shading.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\force_shading\force_shadingDlg.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP63.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP64.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/force_shading.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\force_shading\StdAfx.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP64.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP65.tmp" with contents
+[
+winmm.lib opengl32.lib chai3d_complete.lib glu32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/force_shading_msvc6.pdb" /machine:I386 /nodefaultlib:"msvcprt.lib libc.lib msvcp60.lib" /out:"../../../bin/force_shading_msvc6.exe" /libpath:"../../../lib/msvc6" 
+".\Release\CForceShadingProxy.obj"
+".\Release\force_shading.obj"
+".\Release\force_shadingDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\force_shading.res"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP65.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CForceShadingProxy.cpp
+C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\force_shading\CForceShadingProxy.cpp(253) : warning C4056: overflow in floating-point constant arithmetic
+force_shading.cpp
+force_shadingDlg.cpp
+Generating Code...
+C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\force_shading\CForceShadingProxy.cpp(253) : warning C4756: overflow in constant arithmetic
+C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\force_shading\CForceShadingProxy.cpp(253) : warning C4756: overflow in constant arithmetic
+Linking...
+xilink6: executing 'C:\PROGRA~1\MIAF9D~1\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+force_shading_msvc6.exe - 0 error(s), 3 warning(s)
+<h3>
+--------------------Configuration: implicit_functions - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/implicit_functions.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\implicit_functions.rc"" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP67.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /I "../../../external/OpenGL/msvc6" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/implicit_functions.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\CImplicitCone.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\CImplicitCylinder.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\CImplicitShape.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\CImplicitSphere.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\CImplicitTorus.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\implicit_functions.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\implicit_functionsDlg.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP67.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP68.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /I "../../../external/OpenGL/msvc6" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/implicit_functions.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\StdAfx.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP68.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP69.tmp" with contents
+[
+winmm.lib opengl32.lib chai3d_complete.lib glu32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/implicit_functions_msvc6.pdb" /machine:I386 /nodefaultlib:"msvcprt.lib libc.lib msvcp60.lib" /out:"../../../bin/implicit_functions_msvc6.exe" /libpath:"../../../lib/msvc6" /libpath:"../../../external/OpenGL/msvc6" 
+".\Release\CImplicitCone.obj"
+".\Release\CImplicitCylinder.obj"
+".\Release\CImplicitShape.obj"
+".\Release\CImplicitSphere.obj"
+".\Release\CImplicitTorus.obj"
+".\Release\implicit_functions.obj"
+".\Release\implicit_functionsDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\implicit_functions.res"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP69.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CImplicitCone.cpp
+C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\CImplicitCone.cpp(27) : warning C4068: unknown pragma
+CImplicitCylinder.cpp
+C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\CImplicitCylinder.cpp(26) : warning C4068: unknown pragma
+CImplicitShape.cpp
+C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\CImplicitShape.cpp(29) : warning C4068: unknown pragma
+C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\CImplicitShape.cpp(99) : warning C4305: 'argument' : truncation from 'const double' to 'const float'
+C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\CImplicitShape.cpp(149) : warning C4305: 'argument' : truncation from 'const double' to 'const float'
+C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\CImplicitShape.cpp(149) : warning C4305: 'argument' : truncation from 'const double' to 'const float'
+CImplicitSphere.cpp
+C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\CImplicitSphere.cpp(26) : warning C4068: unknown pragma
+CImplicitTorus.cpp
+C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\implicit_functions\CImplicitTorus.cpp(28) : warning C4068: unknown pragma
+implicit_functions.cpp
+implicit_functionsDlg.cpp
+Generating Code...
+Linking...
+xilink6: executing 'C:\PROGRA~1\MIAF9D~1\VC98\Bin\link.exe'
+LINK : warning LNK4089: all references to "OLEAUT32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+implicit_functions_msvc6.exe - 0 error(s), 9 warning(s)
+<h3>
+--------------------Configuration: mass_springs - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/mass_springs.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\mass_springs\mass_springs.rc"" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP6B.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/mass_springs.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\mass_springs\mass_springs.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\mass_springs\mass_springsDlg.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP6B.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP6C.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/mass_springs.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\mass_springs\StdAfx.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP6C.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP6D.tmp" with contents
+[
+winmm.lib opengl32.lib chai3d_complete.lib glu32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/mass_springs_msvc6.pdb" /machine:I386 /nodefaultlib:"msvcprt.lib libc.lib msvcp60.lib" /out:"../../../bin/mass_springs_msvc6.exe" /libpath:"../../../lib/msvc6" /libpath:"../../../external\PhantomDriver\lib\MSVC" 
+".\Release\mass_springs.obj"
+".\Release\mass_springsDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\mass_springs.res"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP6D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+mass_springs.cpp
+mass_springsDlg.cpp
+Generating Code...
+Linking...
+xilink6: executing 'C:\PROGRA~1\MIAF9D~1\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+mass_springs_msvc6.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: math - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/math.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\math\math.rc"" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP6F.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/math.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\math\math.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\math\mathDlg.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP6F.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP70.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/math.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\math\StdAfx.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP70.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP71.tmp" with contents
+[
+winmm.lib chai3d_complete.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/math_msvc6.pdb" /machine:I386 /nodefaultlib:"msvcprt.lib libc.lib msvcp60.lib" /out:"../../../bin/math_msvc6.exe" /libpath:"../../../lib/msvc6" 
+".\Release\math.obj"
+".\Release\mathDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\math.res"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP71.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+math.cpp
+mathDlg.cpp
+Generating Code...
+Linking...
+xilink6: executing 'C:\PROGRA~1\MIAF9D~1\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+math_msvc6.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: mesh_mesh_collisions - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/mesh_mesh_collisions.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\mesh_mesh_collisions\mesh_mesh_collisions.rc"" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP73.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/mesh_mesh_collisions.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\mesh_mesh_collisions\CCollisionMeshMesh.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\mesh_mesh_collisions\CMeshTool.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\mesh_mesh_collisions\mesh_mesh_collisions.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\mesh_mesh_collisions\mesh_mesh_collisionsDlg.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP73.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP74.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/mesh_mesh_collisions.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\mesh_mesh_collisions\StdAfx.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP74.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP75.tmp" with contents
+[
+winmm.lib opengl32.lib chai3d_complete.lib glu32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/mesh_mesh_collisions_msvc6.pdb" /machine:I386 /nodefaultlib:"msvcprt.lib libc.lib msvcp60.lib" /out:"../../../bin/mesh_mesh_collisions_msvc6.exe" /libpath:"../../../lib/msvc6" 
+".\Release\CCollisionMeshMesh.obj"
+".\Release\CMeshTool.obj"
+".\Release\mesh_mesh_collisions.obj"
+".\Release\mesh_mesh_collisionsDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\mesh_mesh_collisions.res"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP75.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CCollisionMeshMesh.cpp
+CMeshTool.cpp
+mesh_mesh_collisions.cpp
+mesh_mesh_collisionsDlg.cpp
+Generating Code...
+Linking...
+xilink6: executing 'C:\PROGRA~1\MIAF9D~1\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+mesh_mesh_collisions_msvc6.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: object_loader - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/object_loader.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\object_loader\object_loader.rc"" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP77.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/object_loader.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\object_loader\object_loader.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\object_loader\object_loaderDlg.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP77.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP78.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/object_loader.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\object_loader\StdAfx.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP78.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP79.tmp" with contents
+[
+winmm.lib opengl32.lib chai3d_complete.lib glu32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/object_loader_msvc6.pdb" /machine:I386 /nodefaultlib:"msvcprt.lib libc.lib msvcp60.lib" /out:"../../../bin/object_loader_msvc6.exe" /libpath:"../../../lib/msvc6" /libpath:"../../../external\PhantomDriver\lib\MSVC" /libpath:"../../../external/OpenGL/msvc6" 
+".\Release\object_loader.obj"
+".\Release\object_loaderDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\object_loader.res"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP79.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+object_loader.cpp
+object_loaderDlg.cpp
+Generating Code...
+Linking...
+xilink6: executing 'C:\PROGRA~1\MIAF9D~1\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+object_loader_msvc6.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: record_player - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/record_player.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\record_player\record_player.rc"" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP7B.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/record_player.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\record_player\record_player.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\record_player\record_playerDlg.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP7B.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP7C.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/record_player.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\record_player\StdAfx.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP7C.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP7D.tmp" with contents
+[
+winmm.lib opengl32.lib chai3d_complete.lib glu32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/record_player_msvc6.pdb" /machine:I386 /nodefaultlib:"msvcprt.lib libc.lib msvcp60.lib" /out:"../../../bin/record_player_msvc6.exe" /libpath:"../../../lib/msvc6" /libpath:"../../../external\PhantomDriver\lib\MSVC" 
+".\Release\record_player.obj"
+".\Release\record_playerDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\record_player.res"
+".\bass.lib"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP7D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+record_player.cpp
+record_playerDlg.cpp
+Generating Code...
+Linking...
+xilink6: executing 'C:\PROGRA~1\MIAF9D~1\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+record_player_msvc6.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: reflections - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP7F.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "_MSVC" /Fp"Release/reflections.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\bcpp6\reflections\main.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP7F.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP80.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib opengl32.lib chai3d_complete.lib glu32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/reflections_msvc6.pdb" /machine:I386 /out:"../../../bin/reflections_msvc6.exe" /libpath:"../../../lib/msvc6" /libpath:"../../../external/OpenGL/msvc6" 
+".\Release\main.obj"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP80.tmp"
+<h3>Output Window</h3>
+Compiling...
+main.cpp
+Linking...
+xilink6: executing 'C:\PROGRA~1\MIAF9D~1\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+reflections_msvc6.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: sounds - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/sounds.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\sounds\sounds.rc"" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP82.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/sounds.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\sounds\CSound.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\sounds\CSoundMesh.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\sounds\sounds.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\sounds\soundsDlg.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP82.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP83.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/sounds.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d[v1.60]\chai3d[v1.6]\chai3d\examples\msvc6\sounds\StdAfx.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP83.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP84.tmp" with contents
+[
+winmm.lib opengl32.lib chai3d_complete.lib glu32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/sounds_msvc6.pdb" /machine:I386 /nodefaultlib:"msvcprt.lib libc.lib msvcp60.lib" /out:"../../../bin/sounds_msvc6.exe" /libpath:"../../../lib/msvc6" /libpath:"../../../external\PhantomDriver\lib\MSVC" 
+".\Release\CSound.obj"
+".\Release\CSoundMesh.obj"
+".\Release\sounds.obj"
+".\Release\soundsDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\sounds.res"
+".\bass.lib"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP84.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CSound.cpp
+CSoundMesh.cpp
+sounds.cpp
+soundsDlg.cpp
+Linking...
+xilink6: executing 'C:\PROGRA~1\MIAF9D~1\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+sounds_msvc6.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

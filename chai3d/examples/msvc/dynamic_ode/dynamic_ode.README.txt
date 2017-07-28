@@ -1,0 +1,26 @@
+/****
+
+ CHAI Example: dynamic_ode
+ 
+ Author: Chris Sewell / Federico Barbagli / Bera
+
+****/
+
+This example connects CHAI with ODE (Open Dynamics Engine), an 
+open-source physics engine (www.ode.org) that allows for the easy 
+creation of dynamic virtual worlds.  In addition, this example shows 
+how to use two devices within the same world.  (Enabling the second 
+device is done by clicking the "Enable second device" button, so it 
+can also be run with just one device.) This example lets the user 
+push around a box in a small room, similar to the SensAble Dice demo.  
+
+The ODE library is in the lib folder within the msvc6 example folder, 
+and the include files are in the include folder.
+
+The cMesh, class is subclassed as cODEMesh in separate files in order 
+to connect the CHAI mesh to ODE objects.  This is an example of how 
+you can extend CHAI through subclassing.
+
+
+
+

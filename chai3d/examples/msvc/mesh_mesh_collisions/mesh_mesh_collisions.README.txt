@@ -1,0 +1,20 @@
+/****
+
+ CHAI Example: mesh_mesh_collisions
+ 
+ Author: Chris Sewell
+
+****/
+
+This example allows the user to control the position and rotation of
+a mesh using the haptic device, and detects collisions between this
+mesh and other meshes of the world.  The tool mesh is yellow when
+not in collision and red when it is in collision with another mesh.
+The algorithm makes use of the CHAI sphere trees as well as Tomas
+Moller's triangle-triangle primitive intersection algorithm.  It can
+return all pairs of colliding triangles or just one pair (based on
+the checkbox).  This example currently provides no force feedback; the
+tool mesh just changes color when it is in collision.  
+
+
+ 

@@ -1,0 +1,19 @@
+/****
+
+ CHAI Example: 08_clock
+ 
+ Author: Chris Sewell
+
+****/
+
+This example demonstrates the functionalities of the
+build-in CHAI clock.  Pressing the Start button starts
+the clock; pressing Stop stops it; and pressing Init
+resets it to zero.  Once the timeout interval (specified
+in the code) is exceeded, a "Timeout" message appears 
+in the bottom right corner.
+
+This simple example illustrates how to create, 
+initialize, start, and stop a clock, and how to set
+and check for timeouts.
+

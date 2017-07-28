@@ -1,0 +1,16 @@
+LIBRARY   phantomGstEffect40
+DESCRIPTION "tests the PHANTOM DLL under MSVC or BCB"
+EXPORTS
+   OpenPhantom
+   ClosePhantoms
+   ResetPhantomEncoders
+   StartCommunication
+   StopCommunication
+   ReadPosition
+   ReadNormalizedPosition
+   SetForce
+   SetForceTorque
+   ReadOrientMat3DOF
+   ReadSwitch
+   GetMaxForce
+   ReadVelocity

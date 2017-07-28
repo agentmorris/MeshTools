@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "voxelizer", "voxelizer\voxelizer.vcxproj", "{51CBFF9C-7992-4215-AE15-1727E535ECB4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "deformables", "deformables\deformables.vcxproj", "{848E0559-0657-49D2-9009-8B123C53B10E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winmeshview", "winmeshview\winmeshview.vcxproj", "{F986898E-9FB1-4758-9897-09C15616B61D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chai3d_complete", "chai3d\msvc\chai3d_complete.vcxproj", "{A9F01342-5463-4634-B1F9-BF98CD5591B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51CBFF9C-7992-4215-AE15-1727E535ECB4}.Release|Win32.ActiveCfg = Release|Win32
+		{51CBFF9C-7992-4215-AE15-1727E535ECB4}.Release|Win32.Build.0 = Release|Win32
+		{848E0559-0657-49D2-9009-8B123C53B10E}.Release|Win32.ActiveCfg = Release|Win32
+		{848E0559-0657-49D2-9009-8B123C53B10E}.Release|Win32.Build.0 = Release|Win32
+		{F986898E-9FB1-4758-9897-09C15616B61D}.Release|Win32.ActiveCfg = Release|Win32
+		{F986898E-9FB1-4758-9897-09C15616B61D}.Release|Win32.Build.0 = Release|Win32
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0}.Release|Win32.ActiveCfg = Release|Win32
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

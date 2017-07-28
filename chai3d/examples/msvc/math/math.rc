@@ -1,0 +1,234 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\math.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\math.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_math_DIALOG DIALOGEX 0, 0, 443, 394
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "math"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "M0",IDC_STATIC,27,20,119,81
+    EDITTEXT        IDC_EDIT1,35,42,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,71,42,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,107,41,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,35,61,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,71,61,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,107,61,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,35,80,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,71,80,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,107,80,28,15,ES_AUTOHSCROLL
+    GROUPBOX        "M1",IDC_STATIC,160,20,119,81
+    EDITTEXT        IDC_EDIT10,168,41,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,204,41,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,240,41,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,168,61,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,204,61,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,240,61,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT16,168,80,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT17,204,80,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT18,240,80,28,15,ES_AUTOHSCROLL
+    GROUPBOX        "MR",IDC_STATIC,294,20,119,81
+    EDITTEXT        IDC_EDIT19,302,41,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT20,338,41,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT21,374,40,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT22,302,60,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT23,338,60,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT24,374,60,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT25,302,79,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT26,338,79,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT27,374,79,28,15,ES_AUTOHSCROLL
+    GROUPBOX        "V0",IDC_STATIC,61,121,47,73
+    EDITTEXT        IDC_EDIT28,71,134,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT29,71,154,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT30,71,173,28,15,ES_AUTOHSCROLL
+    GROUPBOX        "V1",IDC_STATIC,195,121,47,73
+    EDITTEXT        IDC_EDIT31,205,134,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT32,205,153,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT33,205,173,28,15,ES_AUTOHSCROLL
+    GROUPBOX        "VR",IDC_STATIC,331,121,47,73
+    EDITTEXT        IDC_EDIT34,341,134,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT35,341,154,28,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT36,341,173,28,15,ES_AUTOHSCROLL
+    GROUPBOX        "Vector Operations",IDC_STATIC,21,206,394,80
+    PUSHBUTTON      "VR = V0 + V1",IDC_BUTTON5,36,230,58,17
+    PUSHBUTTON      "VR = 2*VR",IDC_BUTTON6,107,231,58,17
+    PUSHBUTTON      "VR = V0 x V1",IDC_BUTTON7,183,230,58,17
+    PUSHBUTTON      "Normalize(VR)",IDC_BUTTON8,261,230,58,17
+    PUSHBUTTON      "Length(VR)",IDC_BUTTON9,339,230,58,17
+    PUSHBUTTON      "VR = V0 - V1",IDC_BUTTON10,35,257,58,17
+    PUSHBUTTON      "VR = VR/2",IDC_BUTTON11,107,257,58,17
+    PUSHBUTTON      "VR = VR x V1",IDC_BUTTON12,183,257,58,17
+    PUSHBUTTON      "VR = V0 * V1",IDC_BUTTON13,261,257,58,17
+    EDITTEXT        IDC_EDIT37,340,258,57,17,ES_AUTOHSCROLL
+    GROUPBOX        "Matrix Operations",IDC_STATIC,21,292,394,80
+    PUSHBUTTON      "Identity",IDC_BUTTON14,35,316,58,17
+    PUSHBUTTON      "Invert M0",IDC_BUTTON15,107,316,58,17
+    PUSHBUTTON      "Trans(MR)",IDC_BUTTON16,183,316,58,17
+    PUSHBUTTON      "VR = M0 * V0",IDC_BUTTON17,261,316,58,17
+    PUSHBUTTON      "MR = M0 * M1",IDC_BUTTON19,35,343,58,17
+    PUSHBUTTON      "M1 = M0",IDC_BUTTON20,107,343,58,17
+    PUSHBUTTON      "MR = Trans(M1)",IDC_BUTTON21,183,343,58,17
+    PUSHBUTTON      "Clear(MR)",IDC_BUTTON22,261,343,58,17
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "math MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "math\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "math.EXE\0"
+            VALUE "ProductName", "math Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_math_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 436
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 387
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\math.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

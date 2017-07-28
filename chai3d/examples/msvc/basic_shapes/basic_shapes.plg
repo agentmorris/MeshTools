@@ -1,0 +1,49 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: basic_shapes - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/basic_shapes.res" /d "NDEBUG" /d "_AFXDLL" "C:\users\dmorris\chai3d\examples\msvc6\basic_shapes\basic_shapes.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP311.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/basic_shapes.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\users\dmorris\chai3d\examples\msvc6\basic_shapes\basic_shapes.cpp"
+"C:\users\dmorris\chai3d\examples\msvc6\basic_shapes\basic_shapesDlg.cpp"
+]
+Creating command line "xicl6.exe @C:\WINDOWS\TEMP\RSP311.tmp" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP312.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/basic_shapes.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\users\dmorris\chai3d\examples\msvc6\basic_shapes\StdAfx.cpp"
+]
+Creating command line "xicl6.exe @C:\WINDOWS\TEMP\RSP312.tmp" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP313.tmp" with contents
+[
+winmm.lib opengl32.lib chai3d_complete.lib glu32.lib PhantomDriver.lib dhdms.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/basic_shapes_msvc6.pdb" /machine:I386 /nodefaultlib:"msvcprt.lib libc.lib msvcp60.lib" /out:"../../../bin/basic_shapes_msvc6.exe" /libpath:"../../../lib/msvc6" 
+.\Release\basic_shapes.obj
+.\Release\basic_shapesDlg.obj
+.\Release\StdAfx.obj
+.\Release\basic_shapes.res
+]
+Creating command line "xilink6.exe @C:\WINDOWS\TEMP\RSP313.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+basic_shapes.cpp
+basic_shapesDlg.cpp
+Generating Code...
+Linking...
+xilink6: executing 'C:\PROGRA~1\MICROS~2\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+basic_shapes_msvc6.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

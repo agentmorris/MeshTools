@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: clock - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/clock.res" /d "NDEBUG" /d "_AFXDLL" "C:\users\dmorris\chai3d\examples\msvc6\clock\clock.rc"" 
+Creating temporary file "C:\DOCUME~1\dmorris\LOCALS~1\Temp\RSP159A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/clock.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\users\dmorris\chai3d\examples\msvc6\clock\clock.cpp"
+"C:\users\dmorris\chai3d\examples\msvc6\clock\clockDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\dmorris\LOCALS~1\Temp\RSP159A.tmp" 
+Creating temporary file "C:\DOCUME~1\dmorris\LOCALS~1\Temp\RSP159B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/clock.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\users\dmorris\chai3d\examples\msvc6\clock\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\dmorris\LOCALS~1\Temp\RSP159B.tmp" 
+Creating temporary file "C:\DOCUME~1\dmorris\LOCALS~1\Temp\RSP159C.tmp" with contents
+[
+winmm.lib chai3d_complete.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/clock.pdb" /machine:I386 /out:"bin/clock.exe" /libpath:"../../../lib/msvc6" 
+.\Release\clock.obj
+.\Release\clockDlg.obj
+.\Release\StdAfx.obj
+.\Release\clock.res
+]
+Creating command line "link.exe @C:\DOCUME~1\dmorris\LOCALS~1\Temp\RSP159C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+clock.cpp
+clockDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+clock.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

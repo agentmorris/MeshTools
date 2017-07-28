@@ -1,0 +1,123 @@
+#####
+#
+# Constants that affect the loading of a model file; must appear
+# before the model specification...
+#
+# These don't work if the previously-loaded model was for some reason not 
+# a deformable model.
+#
+#####
+
+# How should mass be assigned to nodes?
+# FIXED_TET_DENSITY=0, FIXED_TOTAL_MASS, FIXED_VERTEX_MASS
+constant mass_assignment_strategy 1
+
+# This is either the density, the total mass (distributed according to tet volume)
+# or the per-vertex mass, depending on the mass_assignment_strategy constant
+constant mass_assignment_constant 25.0
+
+
+######
+# Model file:
+######
+model   C:\users\dmorris\fea\volume.models\cube.v6.ele
+
+
+######
+# Constraints:
+#
+# constraint [type]             [vertices] [start_time] [end_time] [arguments]
+######
+
+# Constraints will be dynamically generated, so these are just here for debugging
+# constraint   FORCE_CONSTANT     (2)             0.0     100000.0       (0,2000.0,0)
+# constraint   FORCE_CONSTANT     (1)             0.0     100000.0       (2000.0,0,0)
+# constraint   FORCE_CONSTANT     (0)             0.0     100000.0       (0,0,-2000.0)
+# constraint   POSITION_CONSTANT  (3)             0.0     100000.0       lock
+
+# The squash problem...
+#constraint FORCE_CONSTANT (121,122,123,124) 0 100000.0 (0,-320.0,0)
+#constraint FORCE_CONSTANT (163,164,165,166) 0 100000.0 (0,-320.0,0)
+#constraint POSITION_CONSTANT (0,1,4,5,8,10,12,14,16,18,20,22,84,85,88,90,92,94,126,127,130,132,134,136,168,169,172,174,176,178,210,211,214,216,218,220,) 0 100000.0 lock
+
+# The shear problem...
+constraint POSITION_CONSTANT (0,1,2,3,8,9,12,13,16,17,20,21,24,25,28,30,32,34,) 0 100000.0 lock
+constraint FORCE_CONSTANT (228,229,230,231,232,233,) 0 100000.0 (25.0,300.0,0.0)
+
+
+######
+# Constants:
+#
+# constant [name] [value]
+#
+# constants are applied immediately to the model that was most recently loaded
+######
+
+constant   timestep         0.00005
+
+constant   floor_enabled             0
+constant   gravity_enabled           0
+constant   render_vertex_constraints 1
+
+constant   kd             500.0
+constant   ka             3000.0
+constant   kv             3000.0
+
+constant   kd_damp        15.0
+
+# Lower damping allows nice inertial dynamics...
+# constant   kd_damp        50.0
+
+
+
+######
+# Nonhomogeneous constant management
+######
+enable_nonhomogeneous_constants 1
+
+# constant [constant_name] [constant_value] [vertices]
+constant kd 10.0 200-300
+constant kd 20.0 110
+constant kd 15.0 56,67,78
+
+
+
+
+######
+# Output specs:
+#
+# Output files will be datestamped with the real time at which the
+# simulation was started and the simulated time at which the output was
+# generated.
+######
+
+#
+# Enable steady state output
+#
+# steady_state_output [minimum_simtime] [maximum_simtime] [exit]
+#
+
+steady_state_output 0.0 2.5 0
+
+#
+# Set thresholds used to assess steady-state
+#
+# thresholds less than zero are ignored (always satisfied)
+#
+# steady_state_parameters [maxvel] [meanvel] [maxaccel] [meanaccel] [required_steady_time]
+#
+steady_state_parameters 0.00004 0.0001 0.03 0.0001 0.25
+
+
+#
+# Used to assign time periods for Abaqus models; the first step implicitly starts at zero,
+# and the last step _ends_ at the last time specified here
+#
+# steps 0.3 0.6 1.0
+steps 1.0
+
+#
+# Used to assign material properties just for outputting to Abaqus
+#
+abaqus_material_prop youngs_modulus 38000.0
+abaqus_material_prop poisson_coeff 0.4

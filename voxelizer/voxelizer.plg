@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: voxelizer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\dmorris\LOCALS~1\Temp\RSP951.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "C:\users\dmorris\chai3d\/include" /I "../cpt/cpt/3d" /I "magic" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/voxelizer.pch" /YX"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\users\dmorris\chai_apps\voxelizer\voxelizer.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\dmorris\LOCALS~1\Temp\RSP951.tmp" 
+Creating temporary file "C:\DOCUME~1\dmorris\LOCALS~1\Temp\RSP952.tmp" with contents
+[
+dhdms.lib winmm.lib opengl32.lib chai3d_complete.lib glu32.lib PhantomDriver.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/voxelizer.pdb" /machine:I386 /out:"bin/voxelizer.exe" /libpath:"../cpt/cpt/3d" /libpath:"c:\cygwin/lib/mingw" /libpath:"c:\cygwin/lib/gcc-lib/i686-pc-mingw32/3.3.1" /libpath:"C:\users\dmorris\chai3d\\lib\msvc6" /libpath:"C:\users\dmorris\chai3d\\external\PhantomDriver\lib\MSVC" 
+.\Release\OpenGL_dlgwin.obj
+.\Release\StdAfx.obj
+.\Release\voxelizer.obj
+.\Release\voxelizer_cpt.obj
+.\Release\voxelizerDlg.obj
+.\Release\WmlDistVec3Tri3.obj
+.\Release\WmlMath.obj
+.\Release\WmlSystem.obj
+.\Release\WmlTriangle3.obj
+.\Release\WmlVector3.obj
+.\Release\WmlWinSystem.obj
+.\Release\voxelizer.res
+]
+Creating command line "link.exe @C:\DOCUME~1\dmorris\LOCALS~1\Temp\RSP952.tmp"
+<h3>Output Window</h3>
+Compiling...
+voxelizer.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+voxelizer.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,239 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+"resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+"#include ""afxres.h""\r\n"
+"\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+"#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+"#define _AFX_NO_OLE_RESOURCES\r\n"
+"#define _AFX_NO_TRACKER_RESOURCES\r\n"
+"#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+"\r\n"
+"#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+"#ifdef _WIN32\r\n"
+"LANGUAGE 9, 1\r\n"
+"#pragma code_page(1252)\r\n"
+"#endif //_WIN32\r\n"
+"#include ""res\\winmeshview.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+"#include ""afxres.rc""         // Standard components\r\n"
+"#endif\r\n"
+"\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\winmeshview.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_winmeshview_DIALOG DIALOGEX 0, 0, 544, 374
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN |
+WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "winmeshview"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+CONTROL         "", IDC_GL_AREA, "Static", SS_BLACKFRAME | SS_SUNKEN, 7, 7,
+428, 277, WS_EX_TRANSPARENT
+LTEXT           "Rendering options :", IDC_RENDEROPS_TEXT, 443, 7, 62, 8
+CONTROL         "Render as wireframe", IDC_CHECK_WIREFRAME, "Button",
+BS_AUTOCHECKBOX | WS_TABSTOP, 443, 19, 81, 10
+CONTROL         "Show edges", IDC_CHECK_SHOWEDGES, "Button",
+BS_AUTOCHECKBOX | WS_TABSTOP, 443, 110, 55, 10
+CONTROL         "Show vertex normals", IDC_CHECK_SHOWNORMALS, "Button",
+BS_AUTOCHECKBOX | WS_TABSTOP, 443, 32, 81, 10
+CONTROL         "Enable texture-mapping", IDC_CHECK_USETEXTURE, "Button",
+BS_AUTOCHECKBOX | WS_TABSTOP, 443, 45, 90, 10
+CONTROL         "Enable vertex colors", IDC_CHECK_USECOLORS, "Button",
+BS_3STATE | WS_TABSTOP, 443, 58, 80, 10
+CONTROL         "Enable material properties", IDC_CHECK_MATERIAL, "Button",
+BS_3STATE | WS_TABSTOP, 443, 71, 97, 10
+PUSHBUTTON      "Load model", IDC_LOAD_MODEL_BUTTON, 443, 190, 94, 14
+PUSHBUTTON      "Load texture map", IDC_LOAD_TEXTURE_BUTTON, 333, 209, 94, 14,
+NOT WS_VISIBLE
+CONTROL         "Slider1", IDC_CAMZOOM_SLIDER, "msctls_trackbar32",
+TBS_BOTH | TBS_NOTICKS | WS_TABSTOP, 437, 261, 97, 15
+LTEXT           "Camera zoom", IDC_CAMZOOM_TEXT, 442, 248, 44, 8
+PUSHBUTTON      "Enable haptics", IDC_TOGGLEHAPTICS_BUTTON, 7, 353, 95, 14
+LTEXT           "Haptic object properties :", IDC_STATIC3, 7, 312, 80, 8
+CONTROL         "Slider1", IDC_STIFFNESS_SLIDER, "msctls_trackbar32",
+TBS_BOTH | TBS_NOTICKS | WS_TABSTOP, 7, 337, 97, 15
+CONTROL         "Slider1", IDC_STATICFRICTION_SLIDER, "msctls_trackbar32",
+TBS_BOTH | TBS_NOTICKS | WS_TABSTOP, 108, 337, 97, 15
+CONTROL         "Slider1", IDC_DYNAMIC_FRICTION_SLIDER, "msctls_trackbar32",
+TBS_BOTH | TBS_NOTICKS | WS_TABSTOP, 209, 337, 97, 15
+LTEXT           "Stiffness: xx", IDC_STIFFNESS_TEXT, 11, 328, 95, 8
+LTEXT           "Static Friction Radius: xx", IDC_STATICFRICTION_TEXT, 113,
+326, 94, 8
+LTEXT           "Dynamic Friction Radius: xx",
+IDC_DYNAMIC_FRICTION_RADIUS_TEXT, 213, 326, 95, 8
+PUSHBUTTON      "Toggle Stereo", IDC_TOGGLE_STEREO_BUTTON, 443, 284, 94, 14
+CONTROL         "Slider1", IDC_STEREOFOCUS_SLIDER, "msctls_trackbar32",
+TBS_BOTH | TBS_NOTICKS | WS_TABSTOP, 437, 353, 97, 15
+LTEXT           "Stereo focal length: xx", IDC_STEREOFOCUS_TEXT, 442, 342,
+95, 8
+CONTROL         "Slider1", IDC_STEREOSEP_SLIDER, "msctls_trackbar32",
+TBS_BOTH | TBS_NOTICKS | WS_TABSTOP, 437, 318, 97, 15
+LTEXT           "Stereo separation: xx", IDC_STEREOSEP_TEXT, 442, 307, 95, 8
+PUSHBUTTON      "Animate Object", IDC_ANIMATION_BUTTON, 114, 353, 88, 14
+CONTROL         "Enable face culling", IDC_CHECK_CULLING, "Button",
+BS_AUTOCHECKBOX | WS_TABSTOP, 443, 84, 81, 10
+CONTROL         "Enable transparency", IDC_CHECK_TRANSPARENCY, "Button",
+BS_3STATE | WS_TABSTOP, 443, 97, 81, 10
+PUSHBUTTON      "Build AABB tree", IDC_BUILD_AABB_BUTTON, 340, 289, 94, 14
+CONTROL         "Show boundary box", IDC_CHECK_SHOWBOX, "Button",
+BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP, 331, 243, 79,
+10
+CONTROL         "Show coordinate frame", IDC_CHECK_SHOWFRAME, "Button",
+BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP, 331, 230, 89,
+10
+COMBOBOX        IDC_CUTPLANE_COMBO, 443, 141, 70, 71, CBS_DROPDOWN |
+WS_VSCROLL | WS_TABSTOP
+LTEXT           "", IDC_STATIC, 443, 123, 8, 8
+LTEXT           "Active clip plane:", IDC_ACTIVECLIP_TEXT, 444, 130, 56, 10
+CONTROL         "", IDC_CUTPLANE_SLIDER, "msctls_trackbar32", TBS_BOTH |
+TBS_NOTICKS | WS_TABSTOP, 436, 169, 97, 15
+LTEXT           "Clip plane position:", IDC_CLIPPOS_TEXT, 445, 158, 92, 10
+PUSHBUTTON      "Reverse Normals", IDC_REVERSENORMALS_BUTTON, 443, 210, 94,
+14
+PUSHBUTTON      "Export Model", IDC_EXPORT_MODEL_BUTTON, 443, 229, 94, 14
+LTEXT           "Left-click and drag on an object to rotate it, shift-left-click and drag on an object to move it...",
+IDC_STATIC1, 7, 287, 301, 9
+LTEXT           "Right-click or shift-right-click to pan the camera, middle-click or shift-middle-click to rotate the camera...",
+IDC_STATIC2, 7, 298, 325, 9
+PUSHBUTTON      "Reset Camera", IDC_RESET_CAMERA_BUTTON, 339, 306, 94, 14
+CONTROL         "Invert", IDC_INVERT_CLIP_PLANE_CHECK, "Button",
+BS_AUTOCHECKBOX | WS_TABSTOP, 504, 129, 34, 10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 1, 0, 0, 1
+PRODUCTVERSION 1, 0, 0, 1
+FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+FILEFLAGS 0x1L
+#else
+FILEFLAGS 0x0L
+#endif
+FILEOS 0x4L
+FILETYPE 0x1L
+FILESUBTYPE 0x0L
+BEGIN
+BLOCK "StringFileInfo"
+BEGIN
+BLOCK "040904B0"
+BEGIN
+VALUE "FileDescription", "winmeshview MFC Application"
+VALUE "FileVersion", "1, 0, 0, 1"
+VALUE "InternalName", "winmeshview"
+VALUE "LegalCopyright", "Copyright (C) 2004"
+VALUE "OriginalFilename", "winmeshview.EXE"
+VALUE "ProductName", "winmeshview Application"
+VALUE "ProductVersion", "1, 0, 0, 1"
+END
+END
+BLOCK "VarFileInfo"
+BEGIN
+VALUE "Translation", 0x409, 1200
+END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+IDD_winmeshview_DIALOG, DIALOG
+BEGIN
+LEFTMARGIN, 7
+RIGHTMARGIN, 537
+TOPMARGIN, 7
+BOTTOMMARGIN, 367
+END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\winmeshview.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

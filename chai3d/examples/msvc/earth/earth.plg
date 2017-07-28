@@ -1,0 +1,26 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: earth - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\SURGSI~1\LOCALS~1\Temp\RSP802.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib opengl32.lib chai3d_complete.lib glu32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/earth_msvc6.pdb" /machine:I386 /out:"../../../bin/earth_msvc6.exe" /libpath:"../../../lib/msvc6" /libpath:"../../../external/OpenGL/msvc6" 
+.\Release\main.obj
+..\..\..\lib\msvc6\DLPORTIO.lib
+..\..\..\lib\msvc6\chai3d_complete.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\SURGSI~1\LOCALS~1\Temp\RSP802.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+earth_msvc6.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

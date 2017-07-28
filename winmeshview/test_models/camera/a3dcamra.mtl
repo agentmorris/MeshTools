@@ -1,0 +1,69 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  2.00.1211
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl cambody__sub_
+Ka 0.00392157 0.00392157 0.00392157
+Kd 0.290196 0.290196 0.290196
+Ks 0.478431 0.478431 0.478431
+illum 2
+Ns 3.03143
+
+newmtl camblk__sub_
+Ka 0.00392157 0.00392157 0.00392157
+Kd 0.196078 0.196078 0.196078
+Ks 1 1 1
+illum 2
+Ns 13.9288
+
+newmtl cammetal__sub_
+Ka 0.498039 0.498039 0.498039
+Kd 0.819608 0.8 0.784314
+Ks 1 0.972549 0.956863
+illum 2
+Ns 157.586
+
+newmtl camnumber__sub_
+Ka 0.0980392 0.0980392 0.0980392
+Kd 0.698039 0.698039 0.698039
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 29.8571
+
+newmtl camdlbmp__sub_
+Ka 0.380392 0.380392 0.380392
+Kd 0.768628 0.768628 0.768628
+Ks 1 1 1
+illum 2
+Ns 73.5167
+
+newmtl camspddsp__sub_
+Ka 0.0980392 0.0980392 0.0980392
+Kd 0.698039 0.698039 0.698039
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 3.03143
+
+newmtl camfilmcnt__sub_
+Ka 0.0980392 0.0980392 0.0980392
+Kd 0.698039 0.698039 0.698039
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 29.8571
+
+newmtl camlens1__sub_
+Ka 0.0980392 0.0980392 0.0980392
+Kd 0.698039 0.698039 0.698039
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 29.8571
+
+newmtl camlensfc__sub_
+Ka 0.0980392 0.0980392 0.0980392
+Kd 0.698039 0.698039 0.698039
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 29.8571

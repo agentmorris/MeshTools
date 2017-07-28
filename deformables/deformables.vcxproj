@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{848E0559-0657-49D2-9009-8B123C53B10E}</ProjectGuid>
+    <RootNamespace>teschner_deformable</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>deformables</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.60315.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/teschner_deformable.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>../../meshes/chai3d/include;../winmeshview;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>COMPILING_TESCHNER_DEFORMABLE;WIN32;NDEBUG;_WINDOWS;_MSVC;WINVER=0x0501;COMPILING_APP; _CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/teschner_deformable.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4800;4305;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;opengl32.lib;chai3d_complete.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>bin/deformables.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../../meshes/chai3d/external/OpenGL/MSVC6;../../meshes/chai3d/lib/msvc;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcprt.lib libc.lib msvcp60.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>.\Release/teschner_deformable.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="constraints.cpp" />
+    <ClCompile Include="cTeschnerMesh.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="deformables.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="deformablesDlg.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="..\winmeshview\celapsed.cpp" />
+    <ClCompile Include="..\winmeshview\cTetMesh.cpp" />
+    <ClCompile Include="..\winmeshview\meshExporter.cpp" />
+    <ClCompile Include="..\winmeshview\meshImporter.cpp" />
+    <ClCompile Include="..\winmeshview\ply_loader.cpp" />
+    <ClCompile Include="..\winmeshview\rply-1.01\rply.c" />
+    <ClCompile Include="..\winmeshview\tetgen_loader.cpp" />
+    <ClCompile Include="..\winmeshview\winmeshview.cpp" />
+    <ClCompile Include="..\winmeshview\winmeshviewDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="constraints.h" />
+    <ClInclude Include="cTeschnerMesh.h" />
+    <ClInclude Include="CVector3f.h" />
+    <ClInclude Include="deformable_mesh_data_structures.h" />
+    <ClInclude Include="reource.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RunningAverage.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="deformables.h" />
+    <ClInclude Include="deformables_globals.h" />
+    <ClInclude Include="deformablesDlg.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="..\winmeshview\winmeshview_globals.h" />
+    <ClInclude Include="..\winmeshview\cTetMesh.h" />
+    <ClInclude Include="..\winmeshview\meshExporter.h" />
+    <ClInclude Include="..\winmeshview\meshImporter.h" />
+    <ClInclude Include="..\winmeshview\ply_loader.h" />
+    <ClInclude Include="..\winmeshview\resource.h" />
+    <ClInclude Include="..\winmeshview\rply-1.01\rply.h" />
+    <ClInclude Include="..\winmeshview\tetgen_loader.h" />
+    <ClInclude Include="..\winmeshview\winmeshview.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\teschner_deformable.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="teschner_deformable.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\teschner_deformable.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="teschner_deformable.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

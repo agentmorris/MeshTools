@@ -1,0 +1,28 @@
+/****
+
+ CHAI Example: 07_math
+ 
+ Author: Chris Sewell
+
+****/
+
+This example demonstrates some of the functionality of the
+built-in matrix and vector classes.  You can enter any
+numbers into any of the three matrices (M0, M1, and MR) or
+vectors (V0, V1, and VR).  Pressing the buttons performs
+the indicated operations.  The results are stored as indicated;
+in most cases, this is in VR for vector results and MR for
+matrix results.  Scalar results (such as length of a vector)
+appear in the text field in the Vector Operations group box.
+
+In the code, the function CmathDlg::OnChangeEdit() reads the
+current values of the matrices and vectors from the screen and 
+stores them in the matrix and vector variables.  The function
+CmathDlg::updateAll() writes the values of these variables to
+the screen.  The CmathDlg::OnButtonX() functions perform the
+indicated operation when Button X is pushed (where X is an
+integer).  
+
+Thus, to see how to perform a specific matrix or vector operation 
+in CHAI, you can examine the code in the handler for the button
+labeled with the desired operation.

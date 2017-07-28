@@ -1,0 +1,121 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "basic_shapes", "basic_shapes\basic_shapes.vcxproj", "{AE34383B-4823-4D29-9BDC-2648759C59E9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0} = {A9F01342-5463-4634-B1F9-BF98CD5591B0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "board_tester", "board_tester\board_tester.vcxproj", "{22B09144-688B-42E3-A418-2247098FF233}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0} = {A9F01342-5463-4634-B1F9-BF98CD5591B0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clock", "clock\clock.vcxproj", "{3196AB59-592E-4369-A353-69E877995169}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0} = {A9F01342-5463-4634-B1F9-BF98CD5591B0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dynamic_ode", "dynamic_ode\dynamic_ode.vcxproj", "{8CEE3DA5-7599-4212-A789-D12EA53542AD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0} = {A9F01342-5463-4634-B1F9-BF98CD5591B0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mass_springs", "mass_springs\mass_springs.vcxproj", "{6241E77E-D9C1-4619-8B85-723C3A3E671E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0} = {A9F01342-5463-4634-B1F9-BF98CD5591B0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "math", "math\math.vcxproj", "{F53A7A11-6914-42D2-8841-02CB6C95AC01}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0} = {A9F01342-5463-4634-B1F9-BF98CD5591B0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "object_loader", "object_loader\object_loader.vcxproj", "{34D319FF-195A-4202-AF28-FA9840C380CE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0} = {A9F01342-5463-4634-B1F9-BF98CD5591B0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "record_player", "record_player\record_player.vcxproj", "{DD5E88B3-BDE7-447C-96D2-B7830EDCB36F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0} = {A9F01342-5463-4634-B1F9-BF98CD5591B0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sounds", "sounds\sounds.vcxproj", "{C8AD877F-E188-455B-ADE2-3F98965C900E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0} = {A9F01342-5463-4634-B1F9-BF98CD5591B0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "reflections", "reflections\reflections.vcxproj", "{03968EC1-C6F9-4811-8EED-4A68A5F0E965}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0} = {A9F01342-5463-4634-B1F9-BF98CD5591B0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "earth", "earth\earth.vcxproj", "{79D43CCF-3B2B-4C5B-BF9C-61198C0649CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0} = {A9F01342-5463-4634-B1F9-BF98CD5591B0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "viewmesh", "viewmesh\viewmesh.vcxproj", "{DC189EC3-5BA2-43A8-93CF-A88E1399BD7E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0} = {A9F01342-5463-4634-B1F9-BF98CD5591B0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mesh_mesh_collisions", "mesh_mesh_collisions\mesh_mesh_collisions.vcxproj", "{0519C093-001E-4ED3-9509-2212B4C6B883}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0} = {A9F01342-5463-4634-B1F9-BF98CD5591B0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dynamic_meshes", "dynamic_meshes\dynamic_meshes.vcxproj", "{DCAB22A2-8E60-42F3-8EE0-0098AD8B89E2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0} = {A9F01342-5463-4634-B1F9-BF98CD5591B0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chai3d_complete", "..\..\msvc\chai3d_complete.vcxproj", "{A9F01342-5463-4634-B1F9-BF98CD5591B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE34383B-4823-4D29-9BDC-2648759C59E9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AE34383B-4823-4D29-9BDC-2648759C59E9}.Release|Win32.ActiveCfg = Release|Win32
+		{22B09144-688B-42E3-A418-2247098FF233}.Debug|Win32.ActiveCfg = Debug|Win32
+		{22B09144-688B-42E3-A418-2247098FF233}.Release|Win32.ActiveCfg = Release|Win32
+		{3196AB59-592E-4369-A353-69E877995169}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3196AB59-592E-4369-A353-69E877995169}.Release|Win32.ActiveCfg = Release|Win32
+		{8CEE3DA5-7599-4212-A789-D12EA53542AD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8CEE3DA5-7599-4212-A789-D12EA53542AD}.Release|Win32.ActiveCfg = Release|Win32
+		{6241E77E-D9C1-4619-8B85-723C3A3E671E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6241E77E-D9C1-4619-8B85-723C3A3E671E}.Release|Win32.ActiveCfg = Release|Win32
+		{F53A7A11-6914-42D2-8841-02CB6C95AC01}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F53A7A11-6914-42D2-8841-02CB6C95AC01}.Release|Win32.ActiveCfg = Release|Win32
+		{34D319FF-195A-4202-AF28-FA9840C380CE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{34D319FF-195A-4202-AF28-FA9840C380CE}.Release|Win32.ActiveCfg = Release|Win32
+		{DD5E88B3-BDE7-447C-96D2-B7830EDCB36F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DD5E88B3-BDE7-447C-96D2-B7830EDCB36F}.Release|Win32.ActiveCfg = Release|Win32
+		{C8AD877F-E188-455B-ADE2-3F98965C900E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C8AD877F-E188-455B-ADE2-3F98965C900E}.Release|Win32.ActiveCfg = Release|Win32
+		{03968EC1-C6F9-4811-8EED-4A68A5F0E965}.Debug|Win32.ActiveCfg = Debug|Win32
+		{03968EC1-C6F9-4811-8EED-4A68A5F0E965}.Release|Win32.ActiveCfg = Release|Win32
+		{79D43CCF-3B2B-4C5B-BF9C-61198C0649CD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{79D43CCF-3B2B-4C5B-BF9C-61198C0649CD}.Release|Win32.ActiveCfg = Release|Win32
+		{DC189EC3-5BA2-43A8-93CF-A88E1399BD7E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DC189EC3-5BA2-43A8-93CF-A88E1399BD7E}.Debug|Win32.Build.0 = Debug|Win32
+		{DC189EC3-5BA2-43A8-93CF-A88E1399BD7E}.Release|Win32.ActiveCfg = Release|Win32
+		{DC189EC3-5BA2-43A8-93CF-A88E1399BD7E}.Release|Win32.Build.0 = Release|Win32
+		{0519C093-001E-4ED3-9509-2212B4C6B883}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0519C093-001E-4ED3-9509-2212B4C6B883}.Release|Win32.ActiveCfg = Release|Win32
+		{DCAB22A2-8E60-42F3-8EE0-0098AD8B89E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DCAB22A2-8E60-42F3-8EE0-0098AD8B89E2}.Release|Win32.ActiveCfg = Release|Win32
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0}.Debug|Win32.Build.0 = Debug|Win32
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0}.Release|Win32.ActiveCfg = Release|Win32
+		{A9F01342-5463-4634-B1F9-BF98CD5591B0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

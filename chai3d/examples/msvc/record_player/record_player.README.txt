@@ -1,0 +1,12 @@
+/****
+
+ CHAI Example: record_player
+ 
+ Author: Federico Barbagli and Christopher Sewell
+
+****/
+
+This example demonstrates some friction, animation, and 
+sound effects.  Enable haptcs, and you can spin the record
+back and forth and at different speeds.  You can select
+from the three national anthems on the drop-down list.

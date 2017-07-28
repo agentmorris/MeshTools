@@ -1,0 +1,28 @@
+/****
+
+ CHAI Example: sounds
+ 
+ Author: Chris Sewell
+
+****/
+
+This example generates sounds based on frequencies, amplitudes,
+and decay coefficients from a data file, convolved with the
+haptic normal force, based on the algorithm
+by Kies Van den Doel K and Dinesh Pai in "The sounds of
+physical shapes". Presence 1998, 7(4): 382-395, and
+"The AHI: An Audio and Haptic Interface For Contact
+Interactions" by DiFilippo and Pai.  Sample data files for 
+a bell and a teapot are in this directory.
+
+It uses the BASS audio library, http://www.un4seen.com/. The
+bass.dll, bass.h, and bass.lib files are included in this
+directory.
+
+Since it uses callbacks for the haptics, it is currently only 
+compatible for use with a Phantom device.
+
+
+
+
+ 

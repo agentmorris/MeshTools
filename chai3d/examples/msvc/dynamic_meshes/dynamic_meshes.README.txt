@@ -1,0 +1,19 @@
+/****
+
+ CHAI Example: dynamic_meshes
+ 
+ Author: Chris Sewell
+
+****/
+
+This example connects CHAI with ODE (Open Dynamics Engine), an 
+open-source physics engine (www.ode.org) that allows for the easy 
+creation of dynamic virtual worlds.  
+
+When you run the demo, push the space bar to drop additional
+meshes (by default bunnies) from the sky.  You can push them
+around.
+
+
+
+

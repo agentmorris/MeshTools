@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: board_tester - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/board_tester.res" /d "NDEBUG" /d "_AFXDLL" "C:\users\dmorris\chai3d\examples\msvc6\board_tester\board_tester.rc"" 
+Creating temporary file "C:\DOCUME~1\dmorris\LOCALS~1\Temp\RSP1590.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/board_tester.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\users\dmorris\chai3d\examples\msvc6\board_tester\board_tester.cpp"
+"C:\users\dmorris\chai3d\examples\msvc6\board_tester\board_testerDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\dmorris\LOCALS~1\Temp\RSP1590.tmp" 
+Creating temporary file "C:\DOCUME~1\dmorris\LOCALS~1\Temp\RSP1591.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/board_tester.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\users\dmorris\chai3d\examples\msvc6\board_tester\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\dmorris\LOCALS~1\Temp\RSP1591.tmp" 
+Creating temporary file "C:\DOCUME~1\dmorris\LOCALS~1\Temp\RSP1592.tmp" with contents
+[
+chai3d_complete.lib DLPORTIO.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/board_tester.pdb" /machine:I386 /out:"bin/board_tester.exe" /libpath:"../../../lib/msvc6/" 
+.\Release\board_tester.obj
+.\Release\board_testerDlg.obj
+.\Release\StdAfx.obj
+.\Release\board_tester.res
+]
+Creating command line "link.exe @C:\DOCUME~1\dmorris\LOCALS~1\Temp\RSP1592.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+board_tester.cpp
+board_testerDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+board_tester.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

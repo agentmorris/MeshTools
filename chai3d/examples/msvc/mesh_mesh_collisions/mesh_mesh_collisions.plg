@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: mesh_mesh_collisions - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP951.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /I "../../../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "_MSVC" /Fp"Release/mesh_mesh_collisions.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\csewell\Desktop\chai3d\examples\msvc6\mesh_mesh_collisions\CCollisionMeshMesh.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d\examples\msvc6\mesh_mesh_collisions\CMeshTool.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d\examples\msvc6\mesh_mesh_collisions\mesh_mesh_collisions.cpp"
+"C:\Documents and Settings\csewell\Desktop\chai3d\examples\msvc6\mesh_mesh_collisions\mesh_mesh_collisionsDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP951.tmp" 
+Creating temporary file "C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP952.tmp" with contents
+[
+winmm.lib opengl32.lib chai3d_complete.lib glu32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/mesh_mesh_collisions_msvc6.pdb" /machine:I386 /nodefaultlib:"msvcprt.lib libc.lib msvcp60.lib" /out:"../../../bin/mesh_mesh_collisions_msvc6.exe" /libpath:"../../../lib/msvc6" 
+".\Release\CCollisionMeshMesh.obj"
+".\Release\CMeshTool.obj"
+".\Release\mesh_mesh_collisions.obj"
+".\Release\mesh_mesh_collisionsDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\mesh_mesh_collisions.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\csewell\LOCALS~1\Temp\RSP952.tmp"
+<h3>Output Window</h3>
+Compiling...
+CCollisionMeshMesh.cpp
+CMeshTool.cpp
+mesh_mesh_collisions.cpp
+mesh_mesh_collisionsDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+mesh_mesh_collisions_msvc6.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

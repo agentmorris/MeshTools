@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A9F01342-5463-4634-B1F9-BF98CD5591B0}</ProjectGuid>
+    <RootNamespace>chai3d_complete</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.60315.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>../src/graphics;../src/collisions;../src/files;../src/tools;../src/devices;../src/display;../src/forces;../src/math;../src/scenegraph;../src/timers;../src/widgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_LIB;_MSVC;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Release/chai3d_complete.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalOptions>/NODEFAULTLIB:libmmd.lib %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>../lib/msvc/chai3d_complete.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>libmmd.lib libmmdd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+    <PostBuildEvent>
+      <Command>../scripts/copyHeaderFiles.bat</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\widgets\CBitmap.cpp" />
+    <ClCompile Include="..\src\devices\CCallback.cpp" />
+    <ClCompile Include="..\src\scenegraph\CCamera.cpp" />
+    <ClCompile Include="..\src\collisions\CCollisionAABB.cpp" />
+    <ClCompile Include="..\src\collisions\CCollisionAABBBox.cpp" />
+    <ClCompile Include="..\src\collisions\CCollisionAABBTree.cpp" />
+    <ClCompile Include="..\src\collisions\CCollisionBrute.cpp" />
+    <ClCompile Include="..\src\collisions\CCollisionSpheres.cpp" />
+    <ClCompile Include="..\src\collisions\CCollisionSpheresGeometry.cpp" />
+    <ClCompile Include="..\src\graphics\CColor.cpp" />
+    <ClCompile Include="..\src\tools\CDelta3dofPointer.cpp" />
+    <ClCompile Include="..\src\devices\CDeltaDevices.cpp" />
+    <ClCompile Include="..\src\graphics\CDraw3D.cpp" />
+    <ClCompile Include="..\src\devices\CDriverSensoray626.cpp" />
+    <ClCompile Include="..\src\devices\CDriverServotogo.cpp" />
+    <ClCompile Include="..\src\files\CFileLoader3DS.cpp" />
+    <ClCompile Include="..\src\files\CFileLoaderBMP.cpp" />
+    <ClCompile Include="..\src\files\CFileLoaderOBJ.cpp" />
+    <ClCompile Include="..\src\files\CFileLoaderTGA.cpp" />
+    <ClCompile Include="..\src\widgets\CFont.cpp" />
+    <ClCompile Include="..\src\tools\CFreedom6S3dofPointer.cpp" />
+    <ClCompile Include="..\src\devices\CFreedom6SDevice.cpp" />
+    <ClCompile Include="..\src\tools\CGeneric3dofPointer.cpp" />
+    <ClCompile Include="..\src\collisions\CGenericCollision.cpp" />
+    <ClCompile Include="..\src\devices\CGenericDevice.cpp" />
+    <ClCompile Include="..\src\scenegraph\CGenericObject.cpp" />
+    <ClCompile Include="..\src\forces\CGenericPointForceAlgo.cpp" />
+    <ClCompile Include="..\src\scenegraph\CGenericPotentialField.cpp" />
+    <ClCompile Include="..\src\tools\CGenericTool.cpp" />
+    <ClCompile Include="..\src\files\CImageLoader.cpp" />
+    <ClCompile Include="..\src\widgets\CLabelPanel.cpp" />
+    <ClCompile Include="..\src\scenegraph\CLight.cpp" />
+    <ClCompile Include="..\src\graphics\CMacrosGL.cpp" />
+    <ClCompile Include="..\src\graphics\CMaterial.cpp" />
+    <ClCompile Include="..\src\math\CMaths.cpp" />
+    <ClCompile Include="..\src\math\CMatrix3d.cpp" />
+    <ClCompile Include="..\src\scenegraph\CMesh.cpp" />
+    <ClCompile Include="..\src\files\CMeshLoader.cpp" />
+    <ClCompile Include="..\src\tools\CMeta3dofPointer.cpp" />
+    <ClCompile Include="..\src\widgets\CPanel.cpp" />
+    <ClCompile Include="..\src\tools\CPhantom3dofPointer.cpp" />
+    <ClCompile Include="..\src\devices\CPhantomDevices.cpp" />
+    <ClCompile Include="..\src\forces\CPotentialFieldForceAlgo.cpp" />
+    <ClCompile Include="..\src\timers\CPrecisionClock.cpp" />
+    <ClCompile Include="..\src\timers\CPrecisionTimer.cpp" />
+    <ClCompile Include="..\src\forces\CProxyPointForceAlgo.cpp" />
+    <ClCompile Include="..\src\graphics\CShaders.cpp" />
+    <ClCompile Include="..\src\scenegraph\CShapeSphere.cpp" />
+    <ClCompile Include="..\src\scenegraph\CShapeTorus.cpp" />
+    <ClCompile Include="..\src\math\CString.cpp" />
+    <ClCompile Include="..\src\graphics\CTexture2D.cpp" />
+    <ClCompile Include="..\src\graphics\CTriangle.cpp" />
+    <ClCompile Include="..\src\scenegraph\CVBOMesh.cpp" />
+    <ClCompile Include="..\src\math\CVector3d.cpp" />
+    <ClCompile Include="..\src\graphics\CVertex.cpp" />
+    <ClCompile Include="..\src\display\CViewport.cpp" />
+    <ClCompile Include="..\src\devices\CVirtualDevice.cpp" />
+    <ClCompile Include="..\src\scenegraph\CWorld.cpp" />
+    <ClCompile Include="..\src\devices\PhantomDriver.cpp" />
+    <ClCompile Include="..\src\devices\Win626.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\devices\App626.h" />
+    <ClInclude Include="..\src\widgets\CBitmap.h" />
+    <ClInclude Include="..\src\devices\CCallback.h" />
+    <ClInclude Include="..\src\scenegraph\CCamera.h" />
+    <ClInclude Include="..\src\collisions\CCollisionAABB.h" />
+    <ClInclude Include="..\src\collisions\CCollisionAABBBox.h" />
+    <ClInclude Include="..\src\collisions\CCollisionAABBTree.h" />
+    <ClInclude Include="..\src\collisions\CCollisionBrute.h" />
+    <ClInclude Include="..\src\collisions\CCollisionSpheres.h" />
+    <ClInclude Include="..\src\collisions\CCollisionSpheresGeometry.h" />
+    <ClInclude Include="..\src\graphics\CColor.h" />
+    <ClInclude Include="..\src\math\CConstants.h" />
+    <ClInclude Include="..\src\tools\CDelta3dofPointer.h" />
+    <ClInclude Include="..\src\devices\CDeltaDevices.h" />
+    <ClInclude Include="..\src\graphics\CDraw3D.h" />
+    <ClInclude Include="..\src\devices\CDriverSensoray626.h" />
+    <ClInclude Include="..\src\devices\CDriverServotogo.h" />
+    <ClInclude Include="..\src\files\CFileLoader3DS.h" />
+    <ClInclude Include="..\src\files\CFileLoaderBMP.h" />
+    <ClInclude Include="..\src\files\CFileLoaderOBJ.h" />
+    <ClInclude Include="..\src\files\CFileLoaderTGA.h" />
+    <ClInclude Include="..\src\widgets\CFont.h" />
+    <ClInclude Include="..\src\tools\CFreedom6S3dofPointer.h" />
+    <ClInclude Include="..\src\devices\CFreedom6SDevice.h" />
+    <ClInclude Include="..\src\tools\CGeneric3dofPointer.h" />
+    <ClInclude Include="..\src\collisions\CGenericCollision.h" />
+    <ClInclude Include="..\src\devices\CGenericDevice.h" />
+    <ClInclude Include="..\src\scenegraph\CGenericObject.h" />
+    <ClInclude Include="..\src\forces\CGenericPointForceAlgo.h" />
+    <ClInclude Include="..\src\scenegraph\CGenericPotentialField.h" />
+    <ClInclude Include="..\src\tools\CGenericTool.h" />
+    <ClInclude Include="..\src\graphics\chai_globals.h" />
+    <ClInclude Include="..\src\files\CImageLoader.h" />
+    <ClInclude Include="..\src\widgets\CLabelPanel.h" />
+    <ClInclude Include="..\src\scenegraph\CLight.h" />
+    <ClInclude Include="..\src\graphics\CMacrosGL.h" />
+    <ClInclude Include="..\src\graphics\CMaterial.h" />
+    <ClInclude Include="..\src\math\CMaths.h" />
+    <ClInclude Include="..\src\math\CMatrix3d.h" />
+    <ClInclude Include="..\src\scenegraph\CMesh.h" />
+    <ClInclude Include="..\src\files\CMeshLoader.h" />
+    <ClInclude Include="..\src\tools\CMeta3dofPointer.h" />
+    <ClInclude Include="..\src\widgets\CPanel.h" />
+    <ClInclude Include="..\src\tools\CPhantom3dofPointer.h" />
+    <ClInclude Include="..\src\devices\CPhantomDevices.h" />
+    <ClInclude Include="..\src\forces\CPotentialFieldForceAlgo.h" />
+    <ClInclude Include="..\src\timers\CPrecisionClock.h" />
+    <ClInclude Include="..\src\timers\CPrecisionTimer.h" />
+    <ClInclude Include="..\src\forces\CProxyPointForceAlgo.h" />
+    <ClInclude Include="..\src\graphics\CShaders.h" />
+    <ClInclude Include="..\src\scenegraph\CShapeSphere.h" />
+    <ClInclude Include="..\src\scenegraph\CShapeTorus.h" />
+    <ClInclude Include="..\src\math\CString.h" />
+    <ClInclude Include="..\src\graphics\CTexture2D.h" />
+    <ClInclude Include="..\src\graphics\CTriangle.h" />
+    <ClInclude Include="..\src\scenegraph\CVBOMesh.h" />
+    <ClInclude Include="..\src\math\CVector3d.h" />
+    <ClInclude Include="..\src\graphics\CVertex.h" />
+    <ClInclude Include="..\src\display\CViewport.h" />
+    <ClInclude Include="..\src\devices\CVirtualDevice.h" />
+    <ClInclude Include="..\src\scenegraph\CWorld.h" />
+    <ClInclude Include="..\src\devices\Dlportio.h" />
+    <ClInclude Include="..\src\graphics\glext.h" />
+    <ClInclude Include="..\src\devices\PhantomDriver.h" />
+    <ClInclude Include="..\src\devices\Win626.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

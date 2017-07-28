@@ -1,0 +1,215 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\dynamic_ode.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\dynamic_ode.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_dynamic_ode_DIALOG DIALOGEX 0, 0, 544, 356
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "dynamic_ode"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_GL_AREA,"Static",SS_BLACKFRAME | SS_SUNKEN,7,7,
+                    428,277,WS_EX_TRANSPARENT
+    LTEXT           "Rendering options :",IDC_STATIC3,443,7,62,8
+    CONTROL         "Render as wireframe",IDC_CHECK_WIREFRAME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,443,19,81,10
+    CONTROL         "Show coordinate frame",IDC_CHECK_SHOWFRAME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,443,32,89,10
+    CONTROL         "Show boundary box",IDC_CHECK_SHOWBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,443,45,79,10
+    CONTROL         "Show vertex normals",IDC_CHECK_SHOWNORMALS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,443,58,81,10
+    CONTROL         "Enable texture-mapping",IDC_CHECK_USETEXTURE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,443,71,90,10
+    CONTROL         "Enable vertex colors",IDC_CHECK_USECOLORS,"Button",
+                    BS_3STATE | WS_TABSTOP,443,84,80,10
+    CONTROL         "Enable material properties",IDC_CHECK_MATERIAL,"Button",
+                    BS_3STATE | WS_TABSTOP,443,97,97,10
+    CONTROL         "Slider1",IDC_CAMZOOM_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,437,197,97,15
+    LTEXT           "Camera zoom",IDC_STATIC,442,184,44,8
+    PUSHBUTTON      "Enable haptics",IDC_TOGGLEHAPTICS_BUTTON,7,334,95,14
+    LTEXT           "Haptic object properties :",IDC_STATIC5,7,287,80,8
+    CONTROL         "Slider1",IDC_STIFFNESS_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,312,97,15
+    CONTROL         "Slider1",IDC_STATICFRICTION_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,108,312,97,15
+    CONTROL         "Slider1",IDC_DYNAMIC_FRICTION_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,209,312,97,15
+    LTEXT           "Stiffness: xx",IDC_STIFFNESS_TEXT,11,303,95,8
+    LTEXT           "Static Friction Radius: xx",IDC_STATICFRICTION_TEXT,113,
+                    301,94,8
+    LTEXT           "Dynamic Friction Radius: xx",
+                    IDC_DYNAMIC_FRICTION_RADIUS_TEXT,213,301,95,8
+    PUSHBUTTON      "Toggle Stereo",IDC_TOGGLE_STEREO_BUTTON,443,220,94,14
+    CONTROL         "Slider1",IDC_STEREOFOCUS_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,437,289,97,15
+    LTEXT           "Stereo focal length: xx",IDC_STEREOFOCUS_TEXT,442,278,
+                    95,8
+    CONTROL         "Slider1",IDC_STEREOSEP_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,437,254,97,15
+    LTEXT           "Stereo separation: xx",IDC_STEREOSEP_TEXT,442,243,95,8
+    CONTROL         "Enable face culling",IDC_CHECK_CULLING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,443,110,81,10
+    CONTROL         "Enable transparency",IDC_CHECK_TRANSPARENCY,"Button",
+                    BS_3STATE | WS_TABSTOP,443,123,81,10
+    PUSHBUTTON      "Enable Second Device",IDC_SECOND_DEVICE_BUTTON,113,334,
+                    88,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "dynamic_ode MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "dynamic_ode"
+            VALUE "LegalCopyright", "Copyright (C) 2004"
+            VALUE "OriginalFilename", "dynamic_ode.EXE"
+            VALUE "ProductName", "dynamic_ode Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_dynamic_ode_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 537
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 349
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\dynamic_ode.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

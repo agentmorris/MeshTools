@@ -1,0 +1,211 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\voxelizer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\voxelizer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_voxelizer_DIALOG DIALOGEX 0, 0, 569, 302
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "voxelizer"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_GL_AREA,"Static",SS_BLACKFRAME | SS_SUNKEN,7,7,
+                    444,254,WS_EX_TRANSPARENT
+    LTEXT           "Rendering options :",IDC_STATIC,457,7,62,8
+    CONTROL         "Render as wireframe",IDC_CHECK_WIREFRAME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,457,19,81,10
+    CONTROL         "Show coordinate frame",IDC_CHECK_SHOWFRAME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,457,32,89,10
+    CONTROL         "Show boundary box",IDC_CHECK_SHOWBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,457,45,79,10
+    CONTROL         "Show vertex normals",IDC_CHECK_SHOWNORMALS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,457,58,81,10
+    CONTROL         "Enable texture-mapping",IDC_CHECK_USETEXTURE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,457,71,90,10
+    CONTROL         "Enable vertex colors",IDC_CHECK_USECOLORS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,457,84,80,10
+    CONTROL         "Enable material properties",IDC_CHECK_MATERIAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,457,97,97,10
+    PUSHBUTTON      "Load model",IDC_LOAD_MODEL_BUTTON,459,124,94,14
+    PUSHBUTTON      "Load texture map",IDC_LOAD_TEXTURE_BUTTON,459,143,94,14
+    CONTROL         "Slider1",IDC_CAMZOOM_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,437,281,97,15
+    LTEXT           "Camera zoom",IDC_STATIC,443,271,44,8
+    PUSHBUTTON      "Voxelize",IDC_VOXELIZE_BUTTON,7,265,69,14
+    PUSHBUTTON      "Quit voxelization",IDC_QUITVOXELIZING_BUTTON,80,265,70,
+                    14
+    CONTROL         "Render voxels as a point cloud",IDC_RENDERPOINTS_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,269,270,113,10
+    PUSHBUTTON      "Load subtractor model",IDC_LOADSUBTRACTOR_BUTTON,459,
+                    162,94,14
+    PUSHBUTTON      "Load modifier model",IDC_LOAD_MODIFIER_BUTTON,459,181,
+                    94,14
+    PUSHBUTTON      "Tetrahedralize",IDC_TETRAHEDRALIZE_BUTTON,7,281,70,14
+    PUSHBUTTON      "Test Voxelization",IDC_TEST_VOXELIZE_BUTTON,80,281,70,
+                    14
+    EDITTEXT        IDC_VOXELRES_EDIT,154,279,52,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NORMALMULT_EDIT,211,279,53,16,ES_AUTOHSCROLL
+    LTEXT           "Voxel resolution:",IDC_STATIC,154,271,52,8
+    LTEXT           "Normal multiplier:",IDC_STATIC,211,271,54,8
+    CONTROL         "Render mesh",IDC_CHECK_RENDER_MESH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,457,110,58,10
+    PUSHBUTTON      "Enable Haptics",IDC_TOGGLEHAPTICS_BUTTON,366,281,70,14
+    CONTROL         "Compute distance field",IDC_DISTANCEFIELD_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,269,284,87,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "voxelizer MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "voxelizer"
+            VALUE "LegalCopyright", "Copyright (C) 2004"
+            VALUE "OriginalFilename", "voxelizer.EXE"
+            VALUE "ProductName", "voxelizer Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_voxelizer_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 562
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 297
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\voxelizer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

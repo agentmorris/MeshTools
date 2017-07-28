@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "earth", "earth.vcproj", "{79D43CCF-3B2B-4C5B-BF9C-61198C0649CD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{79D43CCF-3B2B-4C5B-BF9C-61198C0649CD}.Debug.ActiveCfg = Debug|Win32
+		{79D43CCF-3B2B-4C5B-BF9C-61198C0649CD}.Debug.Build.0 = Debug|Win32
+		{79D43CCF-3B2B-4C5B-BF9C-61198C0649CD}.Release.ActiveCfg = Release|Win32
+		{79D43CCF-3B2B-4C5B-BF9C-61198C0649CD}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
