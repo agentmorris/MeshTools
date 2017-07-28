@@ -16,11 +16,11 @@ There are four projects in the "meshes" solution...
 
 ## chai3d
 
-The core CHAI scenegraph library used by all the other projects.  Builds to chai3d\lib\msvc\chai3d_complete.lib.  
+CHAI3d is a scenegraph library that my colleagues and I developed when I was at Stanford.  It's a dependency of both WinMeshView and Voxelizer.  Builds to chai3d\lib\msvc\chai3d_complete.lib.  
 
 This is an old version of the library; the current version lives at:
 
-[http://chai3d.org/](http://chai3d.org/)
+&nbsp;&nbsp;&nbsp;&nbsp;[http://chai3d.org/](http://chai3d.org/)
 
 Numerous CHAI examples build from chai3d\examples\msvc\msvc_chai_examples.sln to chai3d\bin.  They refer to resources files that live in chai3d\bin\resources.
 
@@ -37,7 +37,7 @@ Includes chai3d_complete.lib via relative paths.
 
 Also see:
 
-[http://dmorris.net/projects/winmeshview/](http://dmorris.net/projects/winmeshview/)
+&nbsp;&nbsp;&nbsp;&nbsp;[http://dmorris.net/projects/winmeshview/](http://dmorris.net/projects/winmeshview/)
 
 
 ## voxelizer
@@ -46,7 +46,7 @@ Voxelizer floodfills a surface mesh (which must be very nearly watertight) to pr
 
 Also see:
 
-[http://dmorris.net/projects/voxelizer/](http://dmorris.net/projects/voxelizer/)
+&nbsp;&nbsp;&nbsp;&nbsp;[http://dmorris.net/projects/voxelizer/](http://dmorris.net/projects/voxelizer/)
 
 
 ## deformables
@@ -61,4 +61,12 @@ Morris, D., & Salisbury, K. (2008). Automatic preparation, calibration, and simu
 
 The code is a relatively standalone mesh class that plugs into the CHAI framework.
 
-[http://dmorris.net/projects/deformables](http://dmorris.net/projects/deformables)
+&nbsp;&nbsp;&nbsp;&nbsp;[http://dmorris.net/projects/deformables](http://dmorris.net/projects/deformables)
+
+
+## third-party components
+
+In addition to CHAI 3D, this code base includes versions of:
+
+&nbsp;&nbsp;&nbsp;&nbsp;[http://www.cs.umd.edu/~mount/ANN/](ANN: Approximate Nearest Neighbors)  
+&nbsp;&nbsp;&nbsp;&nbsp;[https://github.com/lkiesow/librply](RPly: C Library for PLY file I/O)
