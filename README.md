@@ -68,5 +68,5 @@ The code is a relatively standalone mesh class that plugs into the CHAI framewor
 
 In addition to CHAI 3D, this code base includes versions of:
 
-&nbsp;&nbsp;&nbsp;&nbsp;[http://www.cs.umd.edu/~mount/ANN/](ANN - Approximate Nearest Neighbors)  
-&nbsp;&nbsp;&nbsp;&nbsp;[https://github.com/lkiesow/librply](RPly - C Library for PLY file I/O)
+&nbsp;&nbsp;&nbsp;&nbsp;[http://www.cs.umd.edu/~mount/ANN/] (ANN - Approximate Nearest Neighbors)  
+&nbsp;&nbsp;&nbsp;&nbsp;[https://github.com/lkiesow/librply] (RPly - C Library for PLY file I/O)
